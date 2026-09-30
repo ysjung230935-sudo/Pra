@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="page">
+        <section class="card">
+            <h1 id="page-title">NASA Sign Up</h1>
+            <p class="intro info-text">Fill in your details to sign up.</p>
+
+            <form action="#" method="post">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+
+                <div class="field">
+                    <label for="date">Date</label>
+                    <input id="date" name="date" type="date" required />
+                </div>
+
+                <div class="field">
+                    <label for="topic">Why do you want to join NASA?</label>
+                    <textarea id="topic" name="topic" rows="3" placeholder="Write a short answer..."></textarea>
+                </div>
+
+                <fieldset class="field choice-field">
+                    <legend>Choose your ticket</legend>
+                    <div class="option-group">
+                        <label class="option" for="ticket-standard">
+                            <input id="ticket-standard" name="ticket" type="radio" value="standard" required />
+                            Standard Normal Rocket $200,000
+                        </label>
+                        <label class="option" for="ticket-vip">
+                            <input id="ticket-vip" name="ticket" type="radio" value="vip" />
+                            VIP NASA GEN-7.8 ROCKET $5,000,000
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="field choice-field">
+                    <span class="field-label">NASA requirements for sign up</span>
+                    <label class="option" for="vegetarian">
+                        <input id="vegetarian" name="dietary" type="checkbox" value="vegetarian" />
+                        I understand that my personal identification number (PIN) is required to sign up for NASA
+                    </label>
+                </div>
+
+                <button class="submit-btn" type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
